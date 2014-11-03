@@ -49,7 +49,7 @@ grub-install /dev/sda
 Usermanagement
 ==============
 ```
-useradd -d /home/haraldvdlaan -m -g usres -G wheel -s /bin/bash -c "Harald van der Laan" haraldvdlaan
+useradd -d /home/haraldvdlaan -m -g users -G wheel -s /bin/bash -c "Harald van der Laan" haraldvdlaan
 passwd haraldvdlaan
 passwd root
 systemctl reboot
