@@ -46,7 +46,7 @@ change partition 2 to type lvm (t, 23)
 write and exit
 
 create physical volume
-======================
+----------------------
 ```
 pvcreate /dev/sda2
 ```
@@ -57,7 +57,7 @@ vgcreate arch /dev/sda2
 ```
 
 create logical volumes
-======================
+----------------------
 swap 4GB, root 8GB and the rest for home
 ```
 lvcreate -L 4G arch -n swap
@@ -66,7 +66,7 @@ lvcreate -l +100%FREE arch -n home
 ```
 
 Create file systems
-===================
+-------------------
 Format the created partitions
 ```
 mkswap -L swap /dev/mapper/arch-swap
@@ -76,7 +76,7 @@ mkfs.ext4 -L home /dev/mapper/arch-home
 ```
 
 Mount the filesystems
-=====================
+---------------------
 Mount the formatted filesystems
 ```
 swapon /dev/mapper/arch-swap
