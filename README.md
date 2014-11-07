@@ -62,7 +62,7 @@ swap 4GB, root 8GB and the rest for home
 ```
 lvcreate -L 4G arch -n swap
 lvcreate -L 4G arch -n root
-lvcreate -l +100%FREE arch -n swap
+lvcreate -l +100%FREE arch -n home
 ```
 
 Create file systems
