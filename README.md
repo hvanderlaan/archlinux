@@ -61,7 +61,7 @@ create logical volumes
 swap 4GB, root 8GB and the rest for home
 ```
 lvcreate -L 4G arch -n swap
-lvcreate -L 4G arch -n root
+lvcreate -L 8G arch -n root
 lvcreate -l +100%FREE arch -n home
 ```
 
