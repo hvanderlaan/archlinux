@@ -185,6 +185,6 @@ systemctl enable vmtoolsd.service
 ```
 Copy arch version to /etc/arch-release
 ```
-cat /proc/version /etc/arch-release
+cat /proc/version > /etc/arch-release
 systemctl reboot
 ```
